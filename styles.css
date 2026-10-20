@@ -668,3 +668,48 @@ body{
   .step-card p{font-size:11px}
   .trust-item small{font-size:9px}
 }
+
+
+/* Dedicated one-time interior + exterior wash option */
+.plan-card-one-time{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  align-items:center;
+  gap:28px;
+  padding:27px 30px;
+  border-color:rgba(255,106,34,.48);
+  background:linear-gradient(105deg,#1b110c 0%,#111 55%,#19100c 100%);
+}
+.plan-card-one-time:hover{border-color:rgba(255,106,34,.8)}
+.plan-card-one-time .plan-number{color:#ff9a6b}
+.plan-card-one-time h3{font-size:30px;margin:16px 0 8px}
+.one-time-main,.one-time-details{min-width:0}
+.one-time-main .plan-subtitle{max-width:440px;min-height:unset;margin-bottom:12px}
+.one-time-main .price{font-size:42px;margin:15px 0 0}
+.one-time-main .price .rupee{color:#ff6b22}
+.one-time-details .plan-highlight{min-height:unset;margin-bottom:16px}
+.one-time-details .feature-list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px 15px;
+  margin-bottom:20px;
+}
+.one-time-details .plan-footer{margin-top:0}
+.plan-card-one-time .plan-footer .button{font-size:10px}
+
+@media (max-width:780px){
+  .plan-card-one-time{
+    grid-template-columns:minmax(0,1fr);
+    gap:19px;
+    padding:23px 22px 21px;
+  }
+  .one-time-main .price{font-size:40px}
+}
+@media (max-width:539px){
+  .plan-card-one-time{padding:22px 18px 18px}
+  .plan-card-one-time h3{font-size:25px}
+  .one-time-details .feature-list{grid-template-columns:1fr;gap:9px}
+  .one-time-details .plan-footer{align-items:flex-start;flex-direction:column}
+  .one-time-details .plan-footer .button{width:100%}
+}
