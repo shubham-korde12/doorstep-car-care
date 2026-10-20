@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=font-polish-20261020" />
+  <link rel="stylesheet" href="styles.css?v=one-time-wash-20261020" />
 </head>
 <body>
   <div class="announcement"><span class="status-dot"></span> Doorstep car care, made convenient <span class="announcement-separator">•</span> <a href="#plans">Explore monthly plans <span aria-hidden="true">↗</span></a></div>
@@ -123,6 +123,25 @@
           <ul class="feature-list"><li>Daily bucket wash throughout the month</li><li>2 exterior foam washes</li><li>Convenient society service</li><li>Simple everyday car care</li></ul>
           <div class="plan-footer"><span>Daily care throughout the month</span><a class="button button-outline choose-plan" href="#book" data-plan="Daily Care — ₹899/month">Choose Daily Care <span>↗</span></a></div>
         </article>
+        <article class="plan-card plan-card-one-time">
+          <div class="one-time-main">
+            <div class="plan-top"><span class="plan-number">05 / ONE-TIME SERVICE</span><span class="plan-symbol">✦</span></div>
+            <h3>One-Time Wash</h3>
+            <p class="plan-subtitle">Interior + exterior cleaning in one visit. No monthly subscription required.</p>
+            <div class="price"><span class="rupee">₹</span>499 <small>/ one-time</small></div>
+          </div>
+          <div class="one-time-details">
+            <div class="plan-highlight">Interior + exterior wash in one visit</div>
+            <ul class="feature-list">
+              <li>Exterior foam wash</li>
+              <li>Interior vacuuming</li>
+              <li>Dashboard cleaning</li>
+              <li>Tyre &amp; rim cleaning</li>
+              <li>Inside window cleaning</li>
+            </ul>
+            <div class="plan-footer"><span>No monthly commitment</span><a class="button button-primary choose-plan" href="#book" data-plan="One-Time Wash — ₹499 (Interior + Exterior)">Book this wash <span>↗</span></a></div>
+          </div>
+        </article>
       </div>
       <p class="plan-disclaimer"><span aria-hidden="true">ⓘ</span> All plans are valid for 30 days from activation. Unused services cannot be carried forward. Please book at least 24 hours in advance. Terms and conditions apply.</p>
     </section>
@@ -146,7 +165,7 @@
       <div class="booking-copy"><div class="eyebrow"><span class="eyebrow-line"></span> LET'S GET YOU STARTED</div><h2>Your next clean car<br /><span>is one message away.</span></h2><p>Fill in a few details. We’ll prepare a WhatsApp message with your request so our team can follow up and confirm availability.</p><div class="contact-row"><span class="whatsapp-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 11.7a8.1 8.1 0 0 1-12 7.1L4 20l1.3-4A8.1 8.1 0 1 1 20.1 11.7Z"/><path d="M9 8.1c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.5l.7 1.6c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.7-.1l1.5.7c.3.2.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.6-1.1-.2-2.6-.8-4.1-2.2-1.1-1-1.9-2.3-2.1-3.3-.2-.8.2-1.6.9-2.4Z"/></svg></span><div><small>WhatsApp us directly</small><a href="https://wa.me/917498557226" target="_blank" rel="noopener">+91 74985 57226</a></div></div></div>
       <form class="booking-form" id="booking-form">
         <div class="form-heading"><div><span class="form-label">BOOKING REQUEST</span><h3>Tell us about your car</h3></div><span class="form-step">01 <i>/ 01</i></span></div>
-        <div class="form-grid"><label>Full name <input type="text" name="name" placeholder="Your name" autocomplete="name" required /></label><label>Mobile number <input type="tel" name="mobile" placeholder="e.g. 98765 43210" autocomplete="tel" pattern="[0-9+() -]{10,18}" required /></label><label>Society / locality <input type="text" name="society" placeholder="Where is your car parked?" required /></label><label>Car model <input type="text" name="car" placeholder="e.g. Honda City" required /></label><label class="full-field">Interested plan <select name="plan" id="plan-select" required><option value="" disabled selected>Select a monthly plan</option><option>Basic — ₹499/month</option><option>Standard — ₹799/month</option><option>Premium — ₹1,199/month</option><option>Daily Care — ₹899/month</option><option>Not sure yet — need guidance</option></select></label><label class="full-field">Preferred day / timing <input type="text" name="timing" placeholder="e.g. Saturday morning (we'll confirm availability)" /></label></div>
+        <div class="form-grid"><label>Full name <input type="text" name="name" placeholder="Your name" autocomplete="name" required /></label><label>Mobile number <input type="tel" name="mobile" placeholder="e.g. 98765 43210" autocomplete="tel" pattern="[0-9+() -]{10,18}" required /></label><label>Society / locality <input type="text" name="society" placeholder="Where is your car parked?" required /></label><label>Car model <input type="text" name="car" placeholder="e.g. Honda City" required /></label><label class="full-field">Interested plan / service <select name="plan" id="plan-select" required><option value="" disabled selected>Select a plan or service</option><option>Basic — ₹499/month</option><option>Standard — ₹799/month</option><option>Premium — ₹1,199/month</option><option>Daily Care — ₹899/month</option><option>One-Time Wash — ₹499 (Interior + Exterior)</option><option>Not sure yet — need guidance</option></select></label><label class="full-field">Preferred day / timing <input type="text" name="timing" placeholder="e.g. Saturday morning (we'll confirm availability)" /></label></div>
         <button class="button button-primary submit-button" type="submit">Send request on WhatsApp <span aria-hidden="true">↗</span></button><p class="form-note">This submits your request by opening WhatsApp. Your booking is not confirmed until our team replies.</p>
       </form>
     </div></section>
