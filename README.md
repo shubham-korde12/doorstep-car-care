@@ -11,10 +11,10 @@ A responsive, static marketing website for the initial DOORSTEP CAR CARE launch.
 Open `index.html` in a modern browser. An internet connection is recommended for the Google Fonts and hosted car photograph.
 
 ## Deploy to GitHub Pages
-1. Create a GitHub repository (for example, `doorstep-car-care-website`).
-2. Upload the three website files (`index.html`, `styles.css`, `script.js`) to the repository root.
-3. In **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. Wait for GitHub Pages to publish the site and open the URL shown in Pages settings.
+1. The website files live at the repository root on the `develop` branch.
+2. In **Settings → Pages**, select **GitHub Actions** as the publishing source. Leave **Custom domain** blank unless you own a domain you want to connect.
+3. The workflow in `.github/workflows/deploy.yml` publishes the static files whenever website changes are pushed to `develop`.
+4. Check the **Actions** tab for a green deployment run, then open `https://shubham-korde12.github.io/doorstep-car-care/`.
 
 ## Booking form behavior
 The form validates required fields and opens WhatsApp with a pre-filled booking-request message to **+91 74985 57226**. It does not store submissions on a server, and it does not confirm a booking automatically. The business must reply to confirm availability.
