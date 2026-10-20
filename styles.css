@@ -628,3 +628,43 @@ body{
   .trust-item{align-items:flex-start}
   .trust-item strong{font-size:8px}
 }
+
+
+/* One-pixel readability increase for supporting copy and service features */
+.hero-proof p span{font-size:11px}
+.service-tile-copy p{font-size:11px}
+.plan-subtitle{font-size:11px}
+.plan-highlight{font-size:11px}
+.feature-list li{font-size:11px}
+.step-card p{font-size:12px}
+.why-copy>p,.booking-copy>p{font-size:13px}
+.section-heading>p{font-size:13px}
+.faq-list details p{font-size:12px}
+.benefit-card p{font-size:11px}
+.trust-item small{font-size:10px}
+.plan-footer>span{font-size:10px}
+.plan-disclaimer{font-size:10px}
+.form-note{font-size:10px}
+.contact-row small{font-size:10px}
+.footer-main>p{font-size:12px}
+.footer-bottom{font-size:10px}
+
+@media (max-width:1100px) and (min-width:781px){
+  .feature-list li{font-size:12px}
+}
+
+@media (max-width:780px){
+  .hero-proof p span{font-size:10px}
+  .feature-list li{font-size:13px}
+  .step-card p{font-size:12px}
+  .why-copy>p,.booking-copy>p{font-size:13px}
+  .section-heading>p{font-size:12px}
+  .faq-list details p{font-size:12px}
+  .trust-item small{font-size:10px}
+  .footer-bottom{font-size:9px}
+}
+
+@media (max-width:539px){
+  .step-card p{font-size:11px}
+  .trust-item small{font-size:9px}
+}
